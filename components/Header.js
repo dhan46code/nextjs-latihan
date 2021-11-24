@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import styles from '../styles/Header.module.css';
+import styles from '@/styles/Header.module.css';
+
+// header for navbar on all web page
 export default function Header() {
   return (
     <div>

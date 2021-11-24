@@ -1,0 +1,38 @@
+.showcase {
+  height: 300px;
+  width: 100%;
+  background: #000 url('/images/showcase.jpg') no-repeat center center;
+  color: #fff;
+  position: relative;
+  /* untuk tulisan agar h1 & h2 dibawah  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* agar tampilan nya semua didepan h1 dan h2*/
+.showcase * {
+  z-index: 20;
+}
+
+.showcase h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.showcase h2 {
+  text-transform: capitalize;
+}
